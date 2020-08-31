@@ -1,0 +1,90 @@
+  $(document).ready(function () {
+    $("#container").simpleCalendar({
+      fixedStartDay: 0, // begin weeks by sunday
+      disableEmptyDetails: true,
+      events: [
+        // generate new event after tomorrow for one hour
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+          summary: 'Visit of the Eiffel Tower'
+        },
+        // generate new event for yesterday at noon
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+          summary: 'Restaurant'
+        },
+        // generate new event for the last two days
+        {
+          startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+          endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+          summary: 'Visit of the Louvre'
+        }
+      ],
+
+    });
+  });
+
+
+
+   <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/nature.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Special Lecture</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/wedding.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Sunday Class</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/party.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Workshop</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/business.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Seva Activity</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/fashion.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Seva Yatra & Heritage Walk</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 my-5">
+          <div class="card border-0 card-shadow">
+            <img src="images/family.jpeg" class="card-img">
+            <div class="card-img-overlay">
+              <h5 class="text-white text-uppercase font-weight-bold p-2 heading">National Youth Day</h5>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+<div class="animated-shadow-quote">
+  <blockquote>
+    <p>I am always doing that which I can not do, in order that I may learn how to do it.</p>
+    <cite>Pablo Picasso</cite>
+  </blockquote>
+</div>
