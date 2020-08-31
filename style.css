@@ -12,6 +12,22 @@
     min-width:50px;
   }
   
+  .bg {
+    /* The image used */
+    background-image: url("images/header-img.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75%;
+    max-width:1600px;
+    min-width:50px;
+  }
+
   .size{
       max-width: 1600px;
       min-width: 550px;
