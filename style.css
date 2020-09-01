@@ -13,10 +13,10 @@
   }
   
   .bg {
-    /* The image used */
+
     background-image: url("images/header-img.jpeg");
   
-    /* Full height */
+
     height: 100%; 
   
     /* Center and scale the image nicely */
@@ -536,6 +536,18 @@ blockquote p::before {
   }
   
   @media screen and (max-width: 600px) {
+
+    .bg {
+
+      background-image: url("images/header-img.jpeg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width:600px;
+      min-width:10px;
+    }
+  
     .timeline ul li {
       margin-left: 20px;
     }
@@ -549,14 +561,6 @@ blockquote p::before {
       left: -15px;
       border-width: 8px 16px 8px 0;
       border-color: transparent #E86361 transparent transparent;
-    }
-    .bgimg {
-      background-position: center;
-      background-size: cover;
-      background-image: url("images/header-img.jpeg");
-      min-height: 75%;
-      max-width:1600px;
-      min-width:550px;
     }
   }
   /* timeline end */  
