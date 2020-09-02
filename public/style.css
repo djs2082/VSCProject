@@ -30,7 +30,7 @@
 
   .size{
       max-width: 1600px;
-      min-width: 550px;
+      min-width: 50px;
   }
   /* header */
   
@@ -41,6 +41,14 @@
     
   } */
   
+.align_text_left
+  {
+  text-align: left; /* For Edge */
+}
+.align_text_right
+  {
+  text-align: right; /* For Edge */
+}
   /* navbar */
   .nav-menu {
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
